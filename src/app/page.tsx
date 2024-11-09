@@ -1,3 +1,4 @@
+import ComparisonGraph from "@/components/ComparisonGraph";
 import PageHeader from "@/components/PageHeader";
 import QuickStatistics from "@/components/QuickStatistics";
 import UpdateCard from "@/components/UpdateCard";
@@ -13,6 +14,7 @@ export default function Home() {
         <div className="col-1 flex-1 flex flex-col gap-6">
           <UpdateCard />
           <QuickStatistics />
+          <ComparisonGraph />
         </div>
         <div className="col-2 flex-1">COL 2</div>
       </div>

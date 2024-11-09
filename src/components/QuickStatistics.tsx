@@ -15,7 +15,7 @@ const QuickStatistics = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Quick Statistics</CardTitle>
+        <CardTitle className="text-xl">Quick Statistics</CardTitle>
       </CardHeader>
       <CardContent className="flex gap-4 justify-between">
         <div className="rank flex md:gap-8 gap-4 items-center">
