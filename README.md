@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Assignment - WhatBytes
+
+This project is a frontend assignment developed as part of the interview process for a Frontend Intern role at [WhatBytes](https://www.whatbytes.com/). The project is built using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [ShadCN UI](https://shadcn.dev/).
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Author](#author)
+
+## Overview
+
+This assignment demonstrates my skills and experience with Next.js, Tailwind CSS, and component libraries. The application implements several key features and adheres to best practices for UI design and performance. It reflects my approach to creating a clean, responsive, and user-friendly interface.
+
+## Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **UI Components**: ShadCN UI
+- **Icons**: React Icons
+
+## Features
+
+- **Responsive Design**: Built to look great on all screen sizes, from mobile to desktop.
+- **Component-Based Structure**: Follows a modular and reusable component structure.
+- **ShadCN UI Integration**: Utilized ShadCN UI for a consistent and accessible design across components.
+- **State Management**: Uses Context API and React Hook Form for efficient state and form management.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [npm](https://www.npmjs.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mvaibhav77/whatbytes-assignment.git
+   cd whatbytes-assignment
+   ```
 
-## Learn More
+2. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+**VAIBHAV SHUKLA**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have any questions or feedback, feel free to reach out!
