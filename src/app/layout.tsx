@@ -25,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <FormProvider>
-        <body
-          className={`${roboto.className} antialiased h-[100dvh] overflow-hidden`}
-        >
+        <body className={`${roboto.className} antialiased min-h-[100dvh]`}>
           <Header />
           <main className="flex flex-row md:gap-10 gap-4">
             <Sidenav />

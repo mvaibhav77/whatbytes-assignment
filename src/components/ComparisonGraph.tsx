@@ -58,7 +58,7 @@ const ComparisonGraph = () => {
 
   return (
     <Card>
-      <CardHeader className="flex flex-row items-center justify-between">
+      <CardHeader className="flex flex-row gap-4 items-center justify-between">
         <div className="header flex flex-col gap-2">
           <CardTitle className="text-xl">Comparison Graph</CardTitle>
           <CardDescription>
