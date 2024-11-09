@@ -19,7 +19,7 @@ const SyllabusAnalysis = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Syllabus Wise Analysis</CardTitle>
+        <CardTitle className="text-lg">Syllabus Wise Analysis</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="skill-progess flex flex-col gap-6 ">

@@ -60,11 +60,11 @@ const ComparisonGraph = () => {
     <Card>
       <CardHeader className="flex flex-row gap-4 items-center justify-between">
         <div className="header flex flex-col gap-2">
-          <CardTitle className="text-xl">Comparison Graph</CardTitle>
+          <CardTitle className="text-lg">Comparison Graph</CardTitle>
           <CardDescription>
-            You scored {percentile} %tile which is{" "}
+            You scored {percentile}%tile which is{" "}
             {percentile > avgPercentile ? "higher" : "lower"} than the average
-            percentile {avgPercentile} %tile of all the engineers who took the
+            percentile {avgPercentile}%tile of all the engineers who took the
             assessment.
           </CardDescription>
         </div>

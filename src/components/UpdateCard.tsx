@@ -17,8 +17,10 @@ import {
 import { useFormContext } from "@/context/FormContext";
 import { FormState } from "@/lib/types";
 import { clsx } from "clsx";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaArrowRight, FaHtml5 } from "react-icons/fa6";
+import { Button } from "./ui/button";
 
 const UpdateCard = () => {
   const {
@@ -27,6 +29,8 @@ const UpdateCard = () => {
     setPercentile,
     setCurrentScore,
   } = useFormContext();
+
+  const [open, setOpen] = useState<boolean>(false);
 
   // Initialize React Hook Form
   const {
@@ -46,6 +50,7 @@ const UpdateCard = () => {
     setRank(data.rank);
     setPercentile(data.percentile);
     setCurrentScore(data.currentScore);
+    setOpen(false);
   };
 
   return (
@@ -62,7 +67,7 @@ const UpdateCard = () => {
           </CardTitle>
         </div>
 
-        <Dialog>
+        <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger className="bg-blue-950 text-white rounded-md py-3 px-6">
             Update
           </DialogTrigger>
@@ -190,12 +195,12 @@ const UpdateCard = () => {
                 <DialogClose className="text-blue-950 border-2 rounded-md px-5">
                   Cancel
                 </DialogClose>
-                <DialogClose
+                <Button
                   type="submit"
                   className="flex items-center gap-2 bg-blue-950 text-white py-2 px-4 rounded-md cursor-pointer"
                 >
                   Save <FaArrowRight />
-                </DialogClose>
+                </Button>
               </DialogFooter>
             </form>
           </DialogContent>

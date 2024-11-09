@@ -15,7 +15,7 @@ const QuickStatistics = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-xl">Quick Statistics</CardTitle>
+        <CardTitle className="text-lg">Quick Statistics</CardTitle>
       </CardHeader>
       <CardContent className="flex gap-4 justify-between">
         <div className="rank flex md:gap-8 gap-4 items-center">
@@ -41,7 +41,7 @@ const QuickStatistics = () => {
 
           {/* metrics */}
           <div className="metric">
-            <h5 className="text-3xl">{percentile}</h5>
+            <h5 className="text-3xl">{percentile}%</h5>
             <p className="text-sm text-slate-400">YOUR PERCENTILE</p>
           </div>
         </div>
@@ -56,8 +56,8 @@ const QuickStatistics = () => {
 
           {/* metrics */}
           <div className="metric">
-            <h5 className="text-3xl">{currentScore}</h5>
-            <p className="text-sm text-slate-400">YOUR RANK</p>
+            <h5 className="text-3xl">{currentScore} / 15</h5>
+            <p className="text-sm text-slate-400">CORRECT ANSWERS</p>
           </div>
         </div>
       </CardContent>
