@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Sidenav from "@/components/Sidenav";
+import { FormProvider } from "@/context/FormContext";
 
 const roboto = Roboto({
   weight: ["300", "500", "700"],
@@ -23,15 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className} antialiased h-[100dvh] overflow-hidden`}
-      >
-        <Header />
-        <main className="flex flex-row">
-          <Sidenav />
-          {children}
-        </main>
-      </body>
+      <FormProvider>
+        <body
+          className={`${roboto.className} antialiased h-[100dvh] overflow-hidden`}
+        >
+          <Header />
+          <main className="flex flex-row md:gap-10 gap-4">
+            <Sidenav />
+            {children}
+          </main>
+        </body>
+      </FormProvider>
     </html>
   );
 }
