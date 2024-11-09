@@ -10,3 +10,9 @@ export type FormContextType = {
   setPercentile: (percentile: number) => void;
   setCurrentScore: (score: number) => void;
 };
+
+export type Skill = {
+  name: string;
+  progress: number;
+  color: string;
+};
